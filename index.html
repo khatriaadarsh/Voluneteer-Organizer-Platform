@@ -16,7 +16,7 @@
   <body>
     <!------------ Navbar ------------->
 
-    <nav class="flex flex-wrap justify-between p-5 items-center">
+    <nav class="flex flex-wrap justify-between p-5 items-center bg-blue-100">
       <div class="logo flex items-center">
         <a href="/" class="text-xl font-bold text-blue-700"> VolunteerHub </a>
       </div>
@@ -32,21 +32,31 @@
         <ul
           class="flex flex-col lg:flex-row gap-6 items-center w-full lg:w-auto"
         >
-          <li><a href="">Home</a></li>
-          <li><a href="">Discover Events</a></li>
-          <li><a href="">Dashboard</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="" class="font-semibold hover:text-blue-500">Home</a></li>
+          <li>
+            <a href="" class="font-semibold hover:text-blue-500"
+              >Discover Events</a
+            >
+          </li>
+          <li>
+            <a href="" class="font-semibold hover:text-blue-500">Dashboard</a>
+          </li>
+          <li>
+            <a href="" class="font-semibold hover:text-blue-500">About Us</a>
+          </li>
+          <li>
+            <a href="" class="font-semibold hover:text-blue-500">Contact</a>
+          </li>
         </ul>
         <div
           class="flex flex-col lg:flex-row items-center gap-4 mt-4 lg:mt-0 w-full lg:w-auto"
         >
           <div
-            class="flex items-center rounded-3xl border px-5 h-10 w-full lg:w-auto"
+            class="flex items-center bg-blue-200 rounded-3xl border px-5 h-10 w-full lg:w-auto"
           >
             <input
               type="text"
-              class="border-none outline-none w-full lg:w-auto"
+              class="border-none outline-none w-full lg:w-auto bg-blue-200"
               placeholder="Search . . ."
               id=""
             />
@@ -54,7 +64,7 @@
           </div>
           <div class="studentAndOrganizer flex items-center">
             <button class="text-blue-600 rounded-3xl p-2 font-bold">
-              Organizer | Student
+              Organizer | <span class="text-green-700">Volunteer</span>
             </button>
           </div>
         </div>
@@ -104,6 +114,98 @@
       </div>
     </section>
 
+    <!---------- Discover Events ---------->
+    <section class="py-16 bg-blue-100">
+      <div class="container m-auto px-6 text-gray-500 md:px-12 xl:px-0">
+        <div class="mx-auto grid gap-6 md:w-3/4 lg:w-full lg:grid-cols-3">
+          <!-- First Card -->
+          <div
+            class="bg-white rounded-2xl shadow-xl px-8 py-10 sm:px-12 lg:px-8"
+          >
+            <div class="mb-12 space-y-4">
+              <h3 class="text-2xl font-semibold text-purple-900">
+                Google Cloud
+              </h3>
+              <p class="mb-6">
+                Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at
+                cum, consectetur ullam
+              </p>
+              <a href="#" class="block font-medium text-purple-600"
+                >Know more</a
+              >
+              <button class="bg-blue-500 text-white px-2 py-1 rounded-md">
+                Register Now
+              </button>
+            </div>
+            <img
+              src="./Images/Google-Next18_Day-0-7640-1024x683.jpg"
+              class="w-full mx-auto rounded"
+              alt="illustration"
+              loading="lazy"
+              width="900"
+              height="400"
+            />
+          </div>
+          <!-- Second Card -->
+          <div
+            class="bg-white rounded-2xl shadow-xl px-8 py-10 sm:px-12 lg:px-8"
+          >
+            <div class="mb-12 space-y-4">
+              <h3 class="text-2xl font-semibold text-purple-900">
+                Microsoft Azure
+              </h3>
+              <p class="mb-6">
+                Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at
+                cum, consectetur ullam
+              </p>
+              <a href="#" class="block font-medium text-purple-600"
+                >Know more</a
+              >
+              <button class="bg-blue-500 text-white px-2 py-1 rounded-md">
+                Register Now
+              </button>
+            </div>
+            <img
+              src="./Images/Azure.jpg"
+              class="w-full mx-auto rounded"
+              alt="illustration"
+              loading="lazy"
+              width="900"
+              height="600"
+            />
+          </div>
+          <!-- Third Card -->
+          <div
+            class="bg-white rounded-2xl shadow-xl px-8 py-10 sm:px-12 lg:px-8"
+          >
+            <div class="mb-12 space-y-4">
+              <h3 class="text-2xl font-semibold text-purple-900">Amazon AWS</h3>
+              <p class="mb-6">
+                Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at
+                cum, consectetur ullam
+              </p>
+              <a href="#" class="block font-medium text-purple-600"
+                >Know more</a
+              >
+              <button class="bg-blue-500 text-white px-2 py-1 rounded-md">
+                Register Now
+              </button>
+            </div>
+            <img
+              src="./Images/AWS.jpg"
+              class="w-full mx-auto rounded"
+              alt="illustration"
+              loading="lazy"
+              width="900"
+              height="600"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center items-center pt-8">
+        <a href="#" class="text-xl underline text-blue-800">See More</a>
+      </div>
+    </section>
     <script src="./Script.js"></script>
   </body>
 </html>

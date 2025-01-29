@@ -32,20 +32,28 @@
         <ul
           class="flex flex-col lg:flex-row gap-6 items-center w-full lg:w-auto"
         >
-          <li><a href="" class="font-semibold hover:text-blue-500">Home</a></li>
           <li>
-            <a href="" class="font-semibold hover:text-blue-500"
+            <a href="#home" class="font-semibold hover:text-blue-500">Home</a>
+          </li>
+          <li>
+            <a href="#discoverEvents" class="font-semibold hover:text-blue-500"
               >Discover Events</a
             >
           </li>
           <li>
-            <a href="" class="font-semibold hover:text-blue-500">Dashboard</a>
+            <a href="#dashboard" class="font-semibold hover:text-blue-500"
+              >Dashboard</a
+            >
           </li>
           <li>
-            <a href="" class="font-semibold hover:text-blue-500">About Us</a>
+            <a href="#aboutus" class="font-semibold hover:text-blue-500"
+              >About Us</a
+            >
           </li>
           <li>
-            <a href="" class="font-semibold hover:text-blue-500">Contact</a>
+            <a href="#contact" class="font-semibold hover:text-blue-500"
+              >Contact</a
+            >
           </li>
         </ul>
         <div
@@ -74,11 +82,12 @@
     <!------------- Home   ------------->
 
     <section
-      class="home-section flex flex-col lg:flex-row items-center justify-center w-full"
+      class="home flex flex-col lg:flex-row items-center justify-center w-full"
     >
       <!-- Organizer -->
       <div
         class="flex flex-col justify-center text-center bg-blue-200 pt-20 pb-20 lg:pt-44 lg:pb-44 w-full lg:w-1/2"
+        id="discoverEvents"
       >
         <h2 class="text-3xl font-bold text-blue-700">Empower Your Events</h2>
         <p class="text-gray-600 mt-4 px-2">
@@ -212,6 +221,7 @@
 
     <section
       class="flex items-center bg-blue-200 text-gray-800 py-16 rounded-2xl"
+      id="dashboard"
     >
       <div class="p-4 w-full">
         <div class="grid grid-cols-9 gap-5">
@@ -298,8 +308,8 @@
     </section>
 
     <!-- About Us -->
-     
-    <section class="py-16 bg-blue-100">
+
+    <section class="py-16 bg-blue-100" id="aboutus">
       <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <div
           class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-20"
@@ -335,7 +345,104 @@
       </div>
     </section>
 
+    <!-- Contact Us -->
+    <footer
+      class="bg-blue-300 py-20 px-4 flex flex-col lg:flex-row items-center justify-around"
+    >
+      <div class="w-full lg:w-1/2">
+        <div class="mt-6 border-t pt-4">
+          <h3 class="text-lg font-semibold text-gray-800">Contact Details</h3>
+          <p class="text-gray-700 mt-2">
+            <strong>Email:</strong> support@yourplatform.com
+          </p>
+          <p class="text-gray-700"><strong>Phone:</strong> +1 234 567 890</p>
+          <p class="text-gray-700">
+            <strong>Address:</strong> 123 Volunteer Street, Tech City, TX 75001
+          </p>
+        </div>
 
+        <div class="mt-6 border-t pt-4">
+          <h3 class="text-lg font-semibold text-gray-800">Follow Us</h3>
+          <div class="flex space-x-4 mt-2">
+            <a href="#" class="text-blue-600 hover:text-blue-800"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a>
+            <a href="#" class="text-blue-500 hover:text-blue-700"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
+            <a href="#" class="text-pink-600 hover:text-pink-800"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+            <a href="#" class="text-blue-700 hover:text-blue-900"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Form -->
+      <div
+        class="p-8 rounded-lg shadow-md w-full lg:w-1/2 max-w-lg mt-8 lg:mt-0"
+      >
+        <form id="contactForm" class="space-y-4">
+          <div>
+            <label class="block text-gray-700">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-200"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-gray-700">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-200"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-gray-700">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-200"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-gray-700">Inquiry Type</label>
+            <select
+              id="inquiryType"
+              class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-200"
+            >
+              <option value="Volunteer Support">Volunteer Support</option>
+              <option value="Event Partnerships">Event Partnerships</option>
+              <option value="Technical Issues">Technical Issues</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-gray-700">Message</label>
+            <textarea
+              id="message"
+              class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-200"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
+          >
+            Submit
+          </button>
+        </form>
+        <p id="confirmation" class="hidden text-green-600 mt-4">
+          Thank you! Your message has been sent.
+        </p>
+      </div>
+    </footer>
     <script src="./Script.js"></script>
   </body>
 </html>
